@@ -1,19 +1,25 @@
 let availableKeywords = [
     'Ant',
+    'Caterpillar',
+    'Cockroach',
+    'Lice',
+
+    'Short-Horned Grasshopper',
+    'American Bird Grasshopper',
+    'Red-Legged Grasshopper',
+    'Migratory Locust',
+
     'Bee',
     'Beetles',
     'Butterfly',
-    'Caterpillar',
-    'Cicadas',
-    'Cockroach',
-    'Dragonfly',
-    'Fly',
-    'Grasshopper',
-    'Hornets',
     'Ladybug',
+    'Dragonfly',
+   
     'Mosquito',
-    'Spider',
-    'Worm',
+    'Kissing Bug',
+    'Tick',
+    
+   
 ];
 
 const resultsBox = document.querySelector(".result-box");
@@ -37,7 +43,7 @@ inputBox.onkeyup = function(){
 
 function display(result){
     const content = result.map((list)=>{
-        return "<li onclick=selectInput(this)>" + list + "</li>";
+        return "<a href='"+list+"_desc.html'><li onclick=selectInput(this)>" + list + "</li></a>";
     });
     resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
 }
