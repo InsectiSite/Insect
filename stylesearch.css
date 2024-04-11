@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background: url(backgorund.png);
+    min-height: 100vh;
+}
+.search-box{
+    width: 600px;
+    background: white;
+    margin: 150px auto 0;
+    border-radius: 5px;
+    margin-top: -115px;
+    border: 2px solid darkolivegreen;
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+.icon .fa-solid{
+    color: black;
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+input{
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+}
+button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+button .fa-solid{
+    width: 25px;
+    color: #555;
+    font-size: 22px;
+    cursor: pointer;
+}
+::placeholder{
+    color: #555;
+}
+.result-box{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.result-box ul{
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+}
+.result-box ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.result-box ul li:hover{
+    background: #e9f3ff;
+}
+img{
+    height: 150px;
+    width: 150px;
+    margin-left: 1100px;
+    margin-top: -40px;
+}
+.container{
+    width: 70%;
+    padding: 60px;
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width: 250px;
+    margin: 0 50px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, a.1);
+    transition: 1s;
+}
+.box:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.box img{
+    display: block;
+    width: 150%;
+    height: 60%;
+    border-radius: 5px;
+    justify-content: center;
+    margin-left: 80px;
+}
+.box .content{
+    width: 90%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.box .content:hover{
+    opacity: 1;
+    box-shadow: #555;
+}
+.box .content h1{
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-left: 95px;
+    margin-bottom: 100px;
+}
+.text{
+    background: linear-gradient(90deg, #dfff8e, #9fc53f, #587904);
+    font-style: 'poppins';
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

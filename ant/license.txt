@@ -1,0 +1,11 @@
+Model Information:
+* title:	ANT
+* source:	https://sketchfab.com/3d-models/ant-daff0fd5908d4085a193a6fc126f597e
+* author:	anikatkar (https://sketchfab.com/anikatkar23)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "ANT" (https://sketchfab.com/3d-models/ant-daff0fd5908d4085a193a6fc126f597e) by anikatkar (https://sketchfab.com/anikatkar23) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

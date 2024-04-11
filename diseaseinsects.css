@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Nunito:ital,wght@1,300&family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(backgorund.png);
+}
+.img-slider{
+    position: relative;
+    width: 800px;
+    height: 560px;
+    margin: 10px;
+    background: rgb(57, 110, 7);
+    border-radius: 10px;
+}
+.img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+.img-slider .slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+.img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    border-radius: 10px;
+}
+.img-slider .slide .info{
+    position: absolute;
+    top: 0;
+    padding: 15px 30px;
+}
+.img-slider .slide .info h2{
+    color: #fff;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.img-slider .slide .info p{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: justify;
+}
+.img-slider .navigation{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.img-slider .navigation .btn{
+    background: rgba( 255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.img-slider .navigation .btn.active{
+    background: gray;
+    box-shadow: 0 0 2px rgb(172, 169, 169);
+}
+@media (max-width: 820px){
+    .img-slider{
+        width: 600px;
+        height: 375px;
+    }
+    .img-slider .slide .info{
+        padding: 10px 25px;
+    }
+    .img-slider .slide .info h2{
+        font-size: 35px
+    }
+    .img-slider .slide .info p{
+        width: 70%;
+        font-size: 15px;
+    }
+    .img-slider .navigation{
+        bottom: 25px;
+    }
+    .img-slider .navigation .btn{
+        width: 10px;
+        height: 10px;
+        margin: 8px;
+    }
+}
+@media (max-width: 620px){
+    .img-slider{
+        width: 400px;
+        height: 250px;
+    }
+    .img-slider .slide .info{
+        padding: 10px 20px;
+    }
+    .img-slider .slide .info h2{
+        font-size: 30px
+    }
+    .img-slider .slide .info p{
+        width: 80%;
+        font-size: 13px;
+    }
+    .img-slider .navigation{
+        bottom: 15px;
+    }
+    .img-slider .navigation .btn{
+        width: 8px;
+        height: 8px;
+        margin: 6px;
+    }
+}
+@media (max-width: 420px){
+    .img-slider{
+        width: 600px;
+        height: 375px;
+    }
+    .img-slider .slide .info{
+        padding: 10px 25px;
+    }
+    .img-slider .slide .info h2{
+        font-size: 35px
+    }
+    .img-slider .slide .info p{
+        width: 80%;
+        font-size: 13px;
+    }
+    .img-slider .navigation{
+        bottom: 15px;
+    }
+    .img-slider .navigation .btn{
+        width: 8px;
+        height: 8px;
+        margin: 6px;
+    }
+}
+@media (max-width: 620px){
+    .img-slider{
+        width: 400px;
+        height: 250px;
+    }
+    .img-slider .slide .info{
+        padding: 10px 20px;
+    }
+    .img-slider .slide .info h2{
+        font-size: 30px
+    }
+    .img-slider .slide .info p{
+        width: 80%;
+        font-size: 13px;
+    }
+    .img-slider .navigation{
+        bottom: 15px;
+    }
+    .img-slider .navigation .btn{
+        width: 8px;
+        height: 8px;
+        margin: 6px;
+    }
+}
+@media (max-width: 420px){
+    .img-slider{
+        width: 320px;
+        height: 200px;
+    }
+    .img-slider .slide .info{
+        padding: 5px 10px;
+    }
+    .img-slider .slide .info h2{
+        font-size: 25px
+    }
+    .img-slider .slide .info p{
+        width: 90%;
+        font-size: 11px;
+    }
+    .img-slider .navigation{
+        bottom: 10px;
+    }
+}
+.icon .fa-solid{
+    color: black;
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 650px;
+    margin-right: 50px;
+}
+img{
+    height: 560px;
+    width: 560px;
+}
+button1{
+    display: inline-block;
+    background-color: darkolivegreen;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 290px;
+}
+
+button1:hover{
+    background-color: #6cb506;
+    transform: scale(1.1);
+}
+button2{
+    display: inline-block;
+    background-color: darkolivegreen;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 290px;
+}
+
+button2.btn{
+    background-color: #6cb506;
+    transform: scale(1.1);
+}
+button3{
+    display: inline-block;
+    background-color: darkolivegreen;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 310px;
+}
+
+button3:hover{
+    background-color: #6cb506;
+    transform: scale(1.1);
+}
+button4{
+    display: inline-block;
+    background-color: darkolivegreen;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 310px;
+}
+
+button4:hover{
+    background-color: #6cb506;
+    transform: scale(1.1);
+}
+button5{
+    display: inline-block;
+    background-color: darkolivegreen;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 310px;
+}
+
+button5:hover{
+    background-color: #6cb506;
+    transform: scale(1.1);
+}

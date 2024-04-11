@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Ariel", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px;
+    background: transparent;
+}
+.logoo{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(27, 156, 15);
+}
+.navlist{
+    display: flex;
+    margin-left: 700px;
+}
+
+.navlist a{
+    color: rgb(27, 156, 15);
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid  rgb(27, 156, 15);
+}
+
+.hamburger{
+    margin-left: 1450px;
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+.hamburger .bar, .hamburger:after, .hamburger:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: darkgreen;
+    margin: 6px 0px;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.hamburger.is-active::before{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+.hamburger.is-active::after{
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 30%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid darkolivegreen;
+    border-radius: 20px;
+    padding-top: 200px;
+    transition: 0.4s;
+}
+.mobile-nav.is-active{
+    left: 70%;
+}
+.mobile-nav a{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: darkolivegreen;
+
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.mobile-nav a:hover{
+    color: darkolivegreen;
+    font-size: 20px;
+    background-color: lightgreen;
+}
+@media (max-width: 768px) {
+    .mobile-nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: none;
+    }
+}
+.hero{
+    background-color: #f8f8f8;
+    overflow: hidden;
+    background: url(backgorund.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.hero-content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+}
+
+.hero-content h2{
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: rgb(25, 87, 21);
+    padding-left: 100px;
+}
+
+.hero-content p{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 90px;
+    color: rgb(10, 31, 6);
+    padding-left: 100px;
+    justify-content: center;
+    text-align: justify;
+}
+
+.hero-content button{
+    display: inline-block;
+    background-color: darkolivegreen;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hero-content button:hover{
+    background-color: #67a917;
+    transform: scale(1.1);
+}
+
+.hero-image{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+
+img{
+    margin-bottom: 120px;
+    width: 345px;
+    height: auto;
+    margin-left: 120px;
+    border-radius: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .heading h1{
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    .hero{
+        margin: 0px;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .hero-content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+    .hero-content h2{
+        font-size: 30px;
+    }
+    .hero-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .hero-content button{
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .hero-image{
+        width: 100%;
+    }
+}
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.heading h1{
+    color: rgb(22, 77, 18);
+    font-size: 55px;
+    text-align: center;
+    margin: 35px;
+}
