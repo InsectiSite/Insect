@@ -289,3 +289,18 @@ button5:hover{
     background-color: #6cb506;
     transform: scale(1.1);
 }
+
+@media (max-width: 1198px){
+    button1{
+        margin-top: 190px;
+    }
+    button3{
+        margin-top: 240px;
+    }
+    button4{
+        margin-top: 240px;
+    }
+    button5{
+        margin-top: 240px;
+    }
+}
