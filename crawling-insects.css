@@ -39,7 +39,7 @@ body{
 .img-slider .slide .info{
     position: absolute;
     top: 0;
-    padding: 15px 30px;
+    padding: 0px 30px;
 }
 .img-slider .slide .info h2{
     color: #fff;
@@ -100,6 +100,7 @@ body{
         height: 10px;
         margin: 8px;
     }
+  
 }
 @media (max-width: 620px){
     .img-slider{
@@ -124,6 +125,7 @@ body{
         height: 8px;
         margin: 6px;
     }
+
 }
 @media (max-width: 420px){
     .img-slider{
@@ -148,6 +150,7 @@ body{
         height: 8px;
         margin: 6px;
     }
+ 
 }
 @media (max-width: 620px){
     .img-slider{
@@ -172,6 +175,7 @@ body{
         height: 8px;
         margin: 6px;
     }
+
 }
 @media (max-width: 420px){
     .img-slider{
@@ -191,6 +195,8 @@ body{
     .img-slider .navigation{
         bottom: 10px;
     }
+
+ 
 }
 .icon .fa-solid{
     color: black;
@@ -283,9 +289,21 @@ button5{
     cursor: pointer;
     transition: 0.3s ease;
     margin-top: 290px;
+  
 }
 
 button5:hover{
     background-color: #6cb506;
     transform: scale(1.1);
+}
+@media (max-width: 1198px){
+    button1{
+        margin-top: 150px;
+    }
+    button3{
+        margin-top: 190px;
+    }
+    button4{
+        margin-top: 250px;
+    }
 }
