@@ -128,7 +128,7 @@ img{
     margin-bottom: 100px;
 }
 .text{
-    background: linear-gradient(90deg, #dfff8e, #9fc53f, #587904);
+    background: #ffff;
     font-style: 'poppins';
     text-transform: uppercase;
     -webkit-background-clip: text;

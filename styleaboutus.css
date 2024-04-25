@@ -252,3 +252,12 @@ img{
     text-align: center;
     margin: 35px;
 }
+
+.icon .fa-solid{
+    color: black;
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
