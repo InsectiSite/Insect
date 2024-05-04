@@ -280,6 +280,30 @@ section{
         height: auto;
     }
 }
+@media (max-width: 425px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 375px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 320px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h5 {
+        font-size: 10px;
+    }
+
+    
+}
+
 .profile-dropdown{
     position: relative;
     width: fit-content;
